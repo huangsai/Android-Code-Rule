@@ -49,6 +49,7 @@
 5：关于联网采用的是okHttp和okIo，用法详见如下：
 
   //同步请求
+  
 	public Result<String> requestAlipay(float price) {
 		final String path = "/pay/ali_order_param" + getUserinfo();
 		HttpRequest request = new HttpRequest(0, HttpRequest.METHOD_POST, path);
@@ -57,6 +58,7 @@
 	}
 
   //异步请求
+  
 	public void requestSignUp(String anchorUid, String name, String mobile,
 			String company, String position, ICallback<Result<String>> callback) {
 		final String path = "/activity/set_participate" + getUserinfo();
